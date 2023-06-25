@@ -3,5 +3,6 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'index.html', {
-        #context
+        'title': 'Index',
+        'message': 'Prueba de mensaje.'
     });
